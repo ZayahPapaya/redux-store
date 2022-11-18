@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "../../app/store";
 //import data from './data';
 import magic from './SOM.json';
-//const name = magic.data.cards[0].name
+//const name = magic.data.cards[0].identifiers.multiverseId
 const cards = magic.data.cards
 
 export interface CardInterface {
@@ -11,6 +11,7 @@ export interface CardInterface {
   text?: string;
   colors: any;
   image_url?: string;
+  identifiers: any;
 }
 export interface CardState {
   selectedCatagory: number | undefined;
