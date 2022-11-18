@@ -27,3 +27,8 @@ nav {
   background-color: white;
   color: black;
 }
+.cartCount {
+  position: fixed;
+  top: 1%;
+  right: 1%;
+}
