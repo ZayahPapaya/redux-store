@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-header {
@@ -12,7 +12,7 @@
 
 .cardList {
   display: grid;
-  grid-template-columns: repeat(3, 0px);
+  grid-template-columns: repeat(6, 1fr);
   gap: 50px;
   grid-auto-rows: minmax(50px, auto);
   margin-left: auto;
@@ -31,4 +31,17 @@ nav {
   position: fixed;
   top: 1%;
   right: 1%;
+}
+
+.scrollable {
+  overflow: auto;
+  height: 130px;
+}
+
+.selector {
+  text-align: center;
+}
+
+.cardTitle {
+  height: 60px;
 }
