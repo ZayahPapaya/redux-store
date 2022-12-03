@@ -5,7 +5,7 @@ export const Catagory = () => {
   const selectedCatagory = useAppSelector((state) => state.items.selectedCatagory)
   const dispatch = useAppDispatch();
   return (
-    <>
+    <div className="selector">
       Mana cost:
       <select onChange={(e) => {
         const catagory: number | undefined = e.target.value === '0' ? 0 : parseInt(e.target.value) || undefined
@@ -20,6 +20,6 @@ export const Catagory = () => {
         <option value={5} selected={selectedCatagory === 5}>5</option>
         <option value={6} selected={selectedCatagory === 6}>6+</option>
       </select>
-    </>
+    </div>
   )
 }
